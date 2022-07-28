@@ -1,7 +1,7 @@
 
 
 <section id="header">
-    <a href="#"><img src="../../assets/img/logo.png" class="logo" alt=""></a>
+    <a routerLink="home"><img src="../../assets/img/logo.png" class="logo" alt=""></a>
     
     <div>
         <ul id="navbar">
@@ -11,11 +11,20 @@
            <li><a routerLink="/about">About</a></li>
            <li><a routerLink="/contact">Contact</a></li>
            <li><a routerLink="/contact">Sign in</a></li>
-    <li><a href=""><i class="far fa-shopping-bag"></i></a>
+    <li><button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="far fa-shopping-bag"></i></button>
+
+        <div id="sidebar" class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel">Cart</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            ...
+          </div>
+        </div>
     </li>
         </ul>
     </div>
    
     
     </section>
-

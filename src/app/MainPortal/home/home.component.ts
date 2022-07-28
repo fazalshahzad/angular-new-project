@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from 'src/app/SharedPortal/Services/api.service';
+import { CartapiService } from 'src/app/SharedPortal/Services/cartapi.service';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +9,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  productlist:any;
+
+
+  constructor(private api:ApiService,
+    private cartapi:CartapiService
+    ) { }
 
   ngOnInit(): void {
+
+    this.api.GetProduct().subscribe(res=>{
+      this.productlist=res;
+      this.productlist.forEach((a:any) => {
+        Object.assign(a,{quantity:1, total:a.price})
+        
+      });
+
+
+    })
   }
+
+addtocart(item:any){
+
+}
+
 
 }

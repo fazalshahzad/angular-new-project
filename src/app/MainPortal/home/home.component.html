@@ -51,154 +51,28 @@
  <p>Summer collection New Modern Desighn</p>
  
  <div class="pro-container">
-     <div class="pro"> 
-         <img src="../../assets/img/products/f1.jpg" alt="">
- <div class="des">
- <span>adidas</span>
- <h5>Cartoon AtronautvT-Shirts</h5>
- <div class="star">
- <i class="fas fa-star"></i>
- <i class="fas fa-star"></i>
- <i class="fas fa-star"></i>
- <i class="fas fa-star"></i>
- <i class="fas fa-star"></i>
- 
- </div>
- <h4> $78 </h4>
- </div>
- <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
- 
-     </div>
-     <div class="pro">
-         <img src="../../assets/img/products/f2.jpg" alt="">
- <div class="des">
- <span>adidas</span>
- <h5>Cartoon AtronautvT-Shirts style-2</h5>
- <div class="star">
- <i class="fas fa-star"></i>
- <i class="fas fa-star"></i>
- <i class="fas fa-star"></i>
- <i class="fas fa-star"></i>
- <i class="fas fa-star"></i>
- 
- </div>
- <h4> $78 </h4>
- </div>
- <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
- 
-     </div>
-     <div class="pro">
-         <img src="../../assets/img/products/f3.jpg" alt="">
- <div class="des">
- <span>adidas</span>
- <h5>Cartoon AtronautvT-Shirts style-3</h5>
- <div class="star">
- <i class="fas fa-star"></i>
- <i class="fas fa-star"></i>
- <i class="fas fa-star"></i>
- <i class="fas fa-star"></i>
- <i class="fas fa-star"></i>
- 
- </div>
- <h4> $78 </h4>
- </div>
- <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
- 
-     </div>
-     <div class="pro">
-         <img src="../../assets/img/products/f4.jpg" alt="">
- <div class="des">
- <span>adidas</span>
- <h5>Cartoon AtronautvT-Shirts style-4</h5>
- <div class="star">
- <i class="fas fa-star"></i>
- <i class="fas fa-star"></i>
- <i class="fas fa-star"></i>
- <i class="fas fa-star"></i>
- <i class="fas fa-star"></i>
- 
- </div>
- <h4> $78 </h4>
- </div>
- <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
- 
-     </div>
-     <div class="pro">
-         <img src="../../assets/img/products/f5.jpg" alt="">
- <div class="des">
- <span>adidas</span>
- <h5>Ladies AtronautvT-Top</h5>
- <div class="star">
- <i class="fas fa-star"></i>
- <i class="fas fa-star"></i>
- <i class="fas fa-star"></i>
- <i class="fas fa-star"></i>
- <i class="fas fa-star"></i>
- 
- </div>
- <h4> $108 </h4>
- </div>
- <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
- 
-     </div>
-     <div class="pro">
-         <img src="../../assets/img/products/f6.jpg" alt="">
- <div class="des">
- <span>adidas</span>
- <h5>Ladies AtronautvT-Top style-2</h5>
- <div class="star">
- <i class="fas fa-star"></i>
- <i class="fas fa-star"></i>
- <i class="fas fa-star"></i>
- <i class="fas fa-star"></i>
- <i class="fas fa-star"></i>
- 
- </div>
- <h4> $70 </h4>
- </div>
- <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
- 
-     </div>
-     <div class="pro">
-         <img src="../../assets/img/products/f7.jpg" alt="">
- <div class="des">
- <span>adidas</span>
- <h5>Ladies AtronautvT-Trouser</h5>
- <div class="star">
- <i class="fas fa-star"></i>
- <i class="fas fa-star"></i>
- <i class="fas fa-star"></i>
- <i class="fas fa-star"></i>
- <i class="fas fa-star"></i>
- 
- </div>
- <h4> $95 </h4>
- </div>
- <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
- 
-     </div>
-     <div class="pro">
-         <img src="../../assets/img/products/f8.jpg" alt="">
- <div class="des">
- <span>adidas</span>
- <h5>Ladies AtronautvT-Top style-3</h5>
- <div class="star">
- <i class="fas fa-star"></i>
- <i class="fas fa-star"></i>
- <i class="fas fa-star"></i>
- <i class="fas fa-star"></i>
- <i class="fas fa-star"></i>
- 
- </div>
- <h4> $112 </h4>
- </div>
- <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
- 
-     </div>
- </div>
+   
+   <ng-container *ngFor="let item of productlist">
+    
+    <div id="prod" class="pro"> 
+        <img src="{{item.image}}" alt="">
+<div class="des">
+<span>{{item.title}}</span>
+<h5>{{item.count}}</h5>
+
+<h4> {{item.price}}</h4>
+</div>
+<a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+
+    </div>
+   </ng-container>
+
+
+
+
  
  
- </section>
+
  
  <!-- First Banner -->
  

@@ -10,7 +10,8 @@ import { BlogComponent } from './MainPortal/blog/blog.component';
 import { ShopComponent } from './MainPortal/shop/shop.component';
 import { ContactComponent } from './MainPortal/contact/contact.component';
 import { HomeComponent } from './MainPortal/home/home.component';
-
+import { CartComponent } from './MainPortal/cart/cart.component';
+import { HttpClientModule} from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,11 +21,13 @@ import { HomeComponent } from './MainPortal/home/home.component';
     BlogComponent,
     ShopComponent,
     ContactComponent,
-    HomeComponent
+    HomeComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

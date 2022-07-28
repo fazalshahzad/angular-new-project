@@ -53,3 +53,13 @@ left: 20px;
 
 /* header media qeury */
 
+#sidebar{
+    display: flex;
+    background: rgb(244, 239, 239) !important;
+    box-shadow: 0 5px 15px rgba(0,0,0.06) !important;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+    box-shadow: black;
+}
