@@ -26,6 +26,7 @@ productlist= new BehaviorSubject<any>([]);
     this.cartdatalist.push(product);
     this.productlist.next(this.cartdatalist);
     this.GetTotalAmount();
+console.log(this.cartdatalist);
 
   }
 

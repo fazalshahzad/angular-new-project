@@ -30,7 +30,7 @@ export class HomeComponent implements OnInit {
   }
 
 addtocart(item:any){
-
+this.cartapi.AddToCArt(item);
 }
 
 
