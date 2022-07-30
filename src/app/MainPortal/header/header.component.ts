@@ -15,9 +15,9 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
 
 
-    // this.cartApi.GetProductData().subscribe(res =>{
-    //   this.totalitemnumber = res.lenth;
-    // })
+    this.cartApi.GetProductData().subscribe((res: string | any[]) =>{
+      this.totalitemnumber = res.length;
+    })
 
 
   }

@@ -22,7 +22,7 @@ productlist= new BehaviorSubject<any>([]);
   }
 
 
-  AddToCArt(product:any){
+  AddToCart(product:any){
     this.cartdatalist.push(product);
     this.productlist.next(this.cartdatalist);
     this.GetTotalAmount();
